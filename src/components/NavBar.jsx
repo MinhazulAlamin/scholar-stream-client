@@ -1,4 +1,9 @@
-import React from 'react';
+import React, { use } from 'react';
+import { AuthContext } from '../context/AuthContext';
+import { Link, NavLink } from 'react-router';
+import { FaUser } from 'react-icons/fa';
+import { MdDashboard, MdLogout, MdOutlineAssignment } from 'react-icons/md';
+import { IoSchool } from 'react-icons/io5';
 
 const Navbar = () => {
   const { user, loading, signOutUser, setUser } = use(AuthContext);
@@ -79,7 +84,7 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 z-60">
-      <div className="navbar bg-green-100 max-h-12 sm:max-h-17 sm:min-h-0  max-w-[1600px] mx-auto shadow-sm">
+      <div className="navbar bg-green-100 max-h-12 sm:max-h-17 sm:min-h-0  max-w-400 mx-auto shadow-sm">
         <div className="navbar-start px-2 sm:px-6 z-40">
           <div className="dropdown">
             <div
