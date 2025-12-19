@@ -130,7 +130,7 @@ const AllScholarship = () => {
           </div>
         ) : (
           <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
-            {scholarships.map((scholarship) => (
+            {Array.isArray(scholarships) && scholarships.map((scholarship) => (
               <CardAllScholarship
                 key={scholarship._id}
                 scholarship={scholarship}
@@ -139,7 +139,7 @@ const AllScholarship = () => {
           </div>
         )}
 
-        {scholarships.length === 0 && (
+        {Array.isArray(scholarships) && scholarships.length === 0 && (
           <p className="text-center flex justify-center items-center h-[80vh] -mt-10 text-gray-500">
             <span className="text-3xl">No scholarships found</span>
           </p>
