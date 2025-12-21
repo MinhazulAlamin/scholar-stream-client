@@ -1,16 +1,42 @@
-# React + Vite
+🎓 ScholarStream
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 Project Purpose:
+ScholarStream is a full‑stack web application designed to help students discover, apply for, and manage scholarships easily.
+The platform provides a clean UI, secure authentication, role‑based access control, and integrated payment features.
+It is built with modern frontend and backend technologies to ensure scalability, performance, and user‑friendly experience.
 
-Currently, two official plugins are available:
+🌐 Live URL: https://scholarstream-a11.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Key Features:
+- 🔑 User Authentication – Sign up, login, and secure session management using Firebase.
+- 👥 Role-Based Access Control – Admin, Moderator, and User roles with different permissions.
+- 🎓 Scholarship Management – Browse scholarships with filters and pagination. Admins can add, update, and delete scholarships.
+- 📝 Applications – Students can apply for scholarships directly from the platform. Admins can review and manage applications.
+- ⭐ Reviews & Ratings – Users can leave reviews and ratings for scholarships.
+- 💳 Payment Integration – Stripe integration for handling application fees or donations.
+- 📱 Responsive UI – Built with React, Tailwind CSS, and DaisyUI for a modern, mobile‑friendly interface.
+- ☁️ Deployment – Frontend hosted on Vercel, backend API also deployed on Vercel.
 
-## React Compiler
+📦 NPM Packages Used
+🎨 Frontend:
+- ⚛️ react – Component‑based UI library
+- 🛣️ react-router-dom – Routing for navigation
+- 🎨 tailwindcss – Utility‑first CSS framework
+- 🌸 daisyui – Tailwind component library for UI polish
+- ⚡ vite – Fast build tool for React
+- 🔥 firebase – Authentication and hosting integration
+- 📡 axios – HTTP client for API requests
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚙️ Backend:
+- 🚏 express – Web framework for building APIs
+- 🍃 mongodb – MongoDB driver for database operations
+- 🔐 dotenv – Load environment variables securely
+- 🔄 cors – Enable cross‑origin requests
+- 💳 stripe – Payment gateway integration
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Deployment:
+- 🌐 Frontend: Netlify (React + Vite)
+- ⚙️ Backend: Vercel (Express + MongoDB)
+- 🗄️ Database: MongoDB Atlas
+- 🔑 Authentication: Firebase
+- 💳 Payments: Stripe

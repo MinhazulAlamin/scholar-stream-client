@@ -10,10 +10,13 @@ const ManageUsers = () => {
   const [editingUser, setEditingUser] = useState(null);
 
   useEffect(() => {
-    axiosProvider.get("/users").then((res) => {
-      setUsers(res.data || []);
+  axiosProvider.get("/users")
+    .then(res => setUsers(res.data || []))
+    .catch(err => {
+      console.error("Error fetching users:", err);
+      toast.error("Failed to load users");
     });
-  }, []);
+}, []);
 
   const openEdit = (user) => {
     setEditingUser(user);
@@ -48,7 +51,7 @@ const ManageUsers = () => {
       const remainingUsers = users.filter((u) => u.email !== email);
       setUsers(remainingUsers);
 
-      toast.error("Successfully Deleted");
+      toast.success("Successfully Deleted");
     } catch (error) {
       console.error(error);
       toast.error("Failed to delete user");
