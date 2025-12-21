@@ -4,10 +4,10 @@ import { IoSchool } from 'react-icons/io5';
 
 const Footer = () => {
   return (
-    <footer className="mt-24 bg-gradient-to-b from-green-50 via-white to-green-100 border-t border-green-200">
+    <footer className="mt-24 bg-gradient-to-b from-sky-50 via-white to-sky-100 border-t border-green-200">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-          <div className="text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="text-center">
             <h2 className="text-3xl font-extrabold bg-clip-text t">
               <a
                 className="btn btn-ghost text-lg sm:text-3xl font-bold hover:bg-transparent hover:border-0"
@@ -17,13 +17,13 @@ const Footer = () => {
               </a>
             </h2>
 
-            <p className="mt-4 text-sm text-gray-600 leading-relaxed max-w-sm mx-auto md:mx-0">
+            <p className="mt-4 text-sm text-gray-600 leading-relaxed max-w-sm mx-auto">
               A modern scholarship management platform helping students discover
               opportunities, track applications, and achieve academic success
               worldwide.
             </p>
 
-            <div className="flex justify-center md:justify-start gap-4 mt-6">
+            <div className="flex justify-center gap-4 mt-6">
               {[
                 { icon: <FaFacebookF />, link: "https://www.facebook.com/MinhazulAlamin007/" },
                 { icon: <FaInstagram />, link: "https://www.instagram.com/" },
@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="text-center md:text-left">
+          <div className="text-center">
             <h4 className="text-lg font-semibold text-gray-800 mb-4">
               About & Support
             </h4>
@@ -69,27 +69,6 @@ const Footer = () => {
                 Contact Support
               </li>
             </ul>
-          </div>
-          <div className="flex flex-col items-center  text-center md:text-left">
-            <h4 className="text-lg font-semibold text-gray-800 mb-6">
-              Crafted By
-            </h4>
-
-            <div className="relative group">
-              <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-green-400 via-emerald-300 to-green-600 blur-xl opacity-40 group-hover:opacity-70 transition"></div>
-
-              <div className="relative w-36 h-36 rounded-full bg-gradient-to-tr from-green-500 via-emerald-400 to-green-700 p-[3px]">
-              </div>
-            </div>
-
-            <div className="mt-5">
-              <p className="text-lg font-bold bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-center text-transparent tracking-wide">
-                MD Minhazul Alamin
-              </p>
-              <p className="text-sm text-gray-600 mt-1 text-center">
-                Junior FrontEnd Developer
-              </p>
-            </div>
           </div>
         </div>
 

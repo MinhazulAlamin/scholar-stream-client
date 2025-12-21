@@ -21,7 +21,7 @@ const ScholarshipDetails = () => {
 
   const feeCard = (
     <div className="space-y-5">
-      <div className="rounded-xl p-5 bg-linear-to-r from-green-200 to-emerald-100 text-green-700 shadow-lg">
+      <div className="rounded-xl p-5 bg-linear-to-r from-sky-200 to-emerald-100 text-green-700 shadow-lg">
         <h3 className="text-lg font-semibold mb-4">Application Fees</h3>
 
         <div className="space-y-2 text-sm">

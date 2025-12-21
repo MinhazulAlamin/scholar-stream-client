@@ -13,7 +13,7 @@ const Root = () => {
     return <Loader/>;
   }
   return (
-    <div data-theme="light" className="max-w-400 mx-auto bg-green-50">
+    <div data-theme="light" className="max-w-400 mx-auto bg-sky-50">
 
       {/* <ScrollToTop/> */}
       <Navbar></Navbar>

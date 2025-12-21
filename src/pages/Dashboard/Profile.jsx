@@ -65,7 +65,7 @@ const Profile = () => {
                   <div className="flex flex-col items-center">
                     <FaUser className="text-4xl opacity-80" />
                     <span className="mt-2 text-sm opacity-90">
-                      {userFromDb?.name.split(" ")[0]}
+                      {userFromDb?.name?.split(" ")[0] || "User"}
                     </span>
                   </div>
                 )}

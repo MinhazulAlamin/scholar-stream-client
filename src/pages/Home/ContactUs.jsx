@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const ContactUs = () => {
   return (
-    <section className="w-full  py-10 bg-linear-to-br from-green-300 to-green-200">
+    <section className="w-full  py-10 bg-linear-to-br from-sky-300 to-sky-200">
       <div className="max-w-5xl flex flex-col md:flex-row justify-between items-center md:gap-20 mx-auto px-4">
         <div>
           <motion.h3
@@ -46,7 +46,7 @@ const ContactUs = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-green-50 rounded-2xl shadow-xl p-8 grid gap-6 min-w-90 sm:min-w-110">
+          className="bg-sky-50 rounded-2xl shadow-xl p-8 grid gap-6 min-w-90 sm:min-w-110">
           <div>
             <label className="block mb-1 font-medium">Name</label>
             <input

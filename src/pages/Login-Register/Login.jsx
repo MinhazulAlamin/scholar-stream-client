@@ -66,7 +66,7 @@ const Login = () => {
     <div
       className="hero min-h-screen bg-cover bg-center"
       style={{
-        backgroundImage: "url('loginregisterbg.png')",
+        backgroundImage: "url('loginregisterbgImg.png')",
       }}>
       <div className="hero-overlay "></div>
       <div className="hero-content w-full max-w-5xl mx-auto flex-col lg:flex-row-reverse gap-5 lg:gap-30 px-6 py-12">
